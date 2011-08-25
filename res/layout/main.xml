@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_weight="1000">
+		<LinearLayout android:layout_height="match_parent"
+			android:id="@+id/linearLayout1" android:layout_width="match_parent">
+			<TableLayout android:layout_height="match_parent"
+				android:layout_width="match_parent" android:id="@+id/main_tl_table">
+				<TableRow android:layout_width="fill_parent" android:id="@+id/tableRow1"
+					android:layout_height="wrap_content">
+					<com.slr.training.swp.db.AccountRowLayout
+						android:layout_width="fill_parent" android:id="@+id/accountRowLayout1"
+						android:orientation="horizontal" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_weight="100"></com.slr.training.swp.db.AccountRowLayout>
+				</TableRow>
+			</TableLayout>
+		</LinearLayout>
+	</ScrollView>
+	<Button android:id="@+id/main_bt_add" android:layout_height="wrap_content"
+		android:layout_weight="1" android:text="Add Account"
+		android:layout_width="fill_parent"></Button>
+</LinearLayout>
